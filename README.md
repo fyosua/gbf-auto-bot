@@ -4,6 +4,9 @@ A highly modular, computer-vision-based automation framework built for Granblue 
 
 Instead of a single messy script, this bot is built using a **Strategy Pattern**. The core engine handles the loop and safety checks, while individual bot behaviors (farming, navigating, healing) are built as separate plug-and-play modules.
 
+# ⚠️ Disclaimer
+This tool is built for educational programming purposes and personal use. Using automation tools may violate the Terms of Service of Granblue Fantasy. Use at your own risk.
+
 ## ✨ Core Features
 * 🧠 **Modular Architecture:** Build endless custom routines in `strategies.py` without ever modifying the core bot engine.
 * 🛑 **Hardware-Level Kill Switch:** Pressing `Esc` triggers a `sys.exit()` command that instantly terminates the process, even during sleep cycles.
