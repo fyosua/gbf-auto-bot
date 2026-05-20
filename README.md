@@ -10,3 +10,9 @@ Instead of a single messy script, this bot is built using a **Strategy Pattern**
 * ⚡ **Smart Sleep Engine:** Replaces standard `time.sleep()`. It chunks waiting periods into 0.05s intervals so the bot is constantly listening for the kill switch with zero lag.
 * 🔗 **Chrome URL Awareness:** The bot actively reads the browser's address bar via clipboard injection to verify its location, and can auto-redirect itself if it gets lost.
 * 🎯 **Region-Based Scanning:** Image recognition is restricted to specific screen coordinates to drastically reduce CPU load and prevent false-positive clicks.
+
+## 🧰 Built-in Developer Tools
+Instead of relying on third-party screenshot apps or doing math to find screen coordinates, this repository includes custom overlay tools to speed up development:
+
+* **`python region_picker.py`**: Tints your screen gray. Click and drag a box over your target area, and the exact `(X, Y, Width, Height)` coordinates are instantly copied to your clipboard so you can paste them into your `region=` code.
+* **`python image_snipper.py`**: Tints your screen gray. Click and drag a box over a game button. The terminal will prompt you for a name, and it will automatically slice that exact area and save it as a `.png` directly into your `images/` folder!
